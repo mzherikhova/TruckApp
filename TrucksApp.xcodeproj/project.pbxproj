@@ -1,0 +1,959 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03FC1C3237856023BA986958 /* Pods_TrucksAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CA947F28A7EDB3183F2301 /* Pods_TrucksAppTests.framework */; };
+		7C5C25BBFB31D401218B69E8 /* Pods_TrucksAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99BCAB37F18E32ADD623F2C /* Pods_TrucksAppUITests.framework */; };
+		82F3B6EA370829D944F22DCA /* Pods_TrucksApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A941C66EF6777264B8D295C /* Pods_TrucksApp.framework */; };
+		961ADEFADF04B92B50C9AF5B /* Pods_TrucksApp_TrucksAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B4BE98F785D7ABEA3B0096 /* Pods_TrucksApp_TrucksAppTests.framework */; };
+		FA539990229C5F200034B04A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53998F229C5F200034B04A /* AppDelegate.swift */; };
+		FA539997229C5F210034B04A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA539996229C5F210034B04A /* Assets.xcassets */; };
+		FA53999A229C5F210034B04A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA539998229C5F210034B04A /* LaunchScreen.storyboard */; };
+		FA5399A5229C5F210034B04A /* TrucksAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5399A4229C5F210034B04A /* TrucksAppTests.swift */; };
+		FA5399B0229C5F210034B04A /* TrucksAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5399AF229C5F210034B04A /* TrucksAppUITests.swift */; };
+		FA5399C0229C7A510034B04A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5399BF229C7A510034B04A /* Router.swift */; };
+		FA5399CA229C7CEF0034B04A /* TruckAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5399C8229C7CEF0034B04A /* TruckAddViewController.swift */; };
+		FA5399CB229C7CEF0034B04A /* TruckAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5399C9229C7CEF0034B04A /* TruckAddViewController.xib */; };
+		FA5399CE229C7DD50034B04A /* TrucksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5399CC229C7DD50034B04A /* TrucksListViewController.swift */; };
+		FA5399CF229C7DD50034B04A /* TrucksListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5399CD229C7DD50034B04A /* TrucksListViewController.xib */; };
+		FA5399D9229C8A5F0034B04A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5399D8229C8A5F0034B04A /* Reachability.swift */; };
+		FA5399DB229C8AEA0034B04A /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5399DA229C8AEA0034B04A /* APIRouter.swift */; };
+		FA5399DD229D4A220034B04A /* APIConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5399DC229D4A220034B04A /* APIConnector.swift */; };
+		FA5399DF229D4D870034B04A /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5399DE229D4D870034B04A /* APIResult.swift */; };
+		FA5399E5229D58B40034B04A /* APIConnector+TruckerAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5399E4229D58B40034B04A /* APIConnector+TruckerAPIProtocol.swift */; };
+		FA5399E7229D5BA30034B04A /* APIDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5399E6229D5BA30034B04A /* APIDecodable.swift */; };
+		FA5399E9229D5C710034B04A /* TruckerAPIObjects+APIDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5399E8229D5C710034B04A /* TruckerAPIObjects+APIDecodable.swift */; };
+		FA5399EC229D5E270034B04A /* TruckAPIObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5399EB229D5E270034B04A /* TruckAPIObjects.swift */; };
+		FA5399EE229D64DE0034B04A /* TruckAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5399ED229D64DE0034B04A /* TruckAPIProtocol.swift */; };
+		FA5399F0229D65BB0034B04A /* TruckAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5399EF229D65BB0034B04A /* TruckAPIManager.swift */; };
+		FA5399F2229DAF180034B04A /* DataRequest+APIDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5399F1229DAF180034B04A /* DataRequest+APIDecodable.swift */; };
+		FA5399F4229DD1A70034B04A /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5399F3229DD1A70034B04A /* DependencyInjection.swift */; };
+		FA5399F7229EC4700034B04A /* Extensions+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5399F6229EC4700034B04A /* Extensions+UIViewController.swift */; };
+		FA5399FB229EDF190034B04A /* TruckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5399F9229EDF190034B04A /* TruckTableViewCell.swift */; };
+		FA5399FC229EDF190034B04A /* TruckTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5399FA229EDF190034B04A /* TruckTableViewCell.xib */; };
+		FA5399FF229EE27D0034B04A /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5399FE229EE27D0034B04A /* NibLoadable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA5399A1229C5F210034B04A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA539984229C5F200034B04A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA53998B229C5F200034B04A;
+			remoteInfo = TrucksApp;
+		};
+		FA5399AC229C5F210034B04A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA539984229C5F200034B04A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA53998B229C5F200034B04A;
+			remoteInfo = TrucksApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D1234E4EE7475E11AC3BDFC /* Pods-TrucksApp-TrucksAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrucksApp-TrucksAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrucksApp-TrucksAppTests/Pods-TrucksApp-TrucksAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		3B3899F56632C3D53F918311 /* Pods-TrucksApp-TrucksAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrucksApp-TrucksAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrucksApp-TrucksAppTests/Pods-TrucksApp-TrucksAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		47B4BE98F785D7ABEA3B0096 /* Pods_TrucksApp_TrucksAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrucksApp_TrucksAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A941C66EF6777264B8D295C /* Pods_TrucksApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrucksApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94CA947F28A7EDB3183F2301 /* Pods_TrucksAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrucksAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE74DDA85A1E8C200D433C6E /* Pods-TrucksAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrucksAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrucksAppUITests/Pods-TrucksAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AF579F29930A232A99EDFFD8 /* Pods-TrucksApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrucksApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrucksApp/Pods-TrucksApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C8B9430BB3083192609D28B3 /* Pods-TrucksAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrucksAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrucksAppTests/Pods-TrucksAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1F1D9A7DEF04EDCE4BC7832 /* Pods-TrucksAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrucksAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrucksAppUITests/Pods-TrucksAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8ED3D9033E6890F3792A1E4 /* Pods-TrucksApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrucksApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrucksApp/Pods-TrucksApp.release.xcconfig"; sourceTree = "<group>"; };
+		F99BCAB37F18E32ADD623F2C /* Pods_TrucksAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrucksAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA53998C229C5F200034B04A /* TrucksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrucksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA53998F229C5F200034B04A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA539996229C5F210034B04A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA539999229C5F210034B04A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA53999B229C5F210034B04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA5399A0229C5F210034B04A /* TrucksAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrucksAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5399A4229C5F210034B04A /* TrucksAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrucksAppTests.swift; sourceTree = "<group>"; };
+		FA5399A6229C5F210034B04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA5399AB229C5F210034B04A /* TrucksAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrucksAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5399AF229C5F210034B04A /* TrucksAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrucksAppUITests.swift; sourceTree = "<group>"; };
+		FA5399B1229C5F210034B04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA5399BF229C7A510034B04A /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FA5399C8229C7CEF0034B04A /* TruckAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckAddViewController.swift; sourceTree = "<group>"; };
+		FA5399C9229C7CEF0034B04A /* TruckAddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TruckAddViewController.xib; sourceTree = "<group>"; };
+		FA5399CC229C7DD50034B04A /* TrucksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrucksListViewController.swift; sourceTree = "<group>"; };
+		FA5399CD229C7DD50034B04A /* TrucksListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrucksListViewController.xib; sourceTree = "<group>"; };
+		FA5399D8229C8A5F0034B04A /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		FA5399DA229C8AEA0034B04A /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		FA5399DC229D4A220034B04A /* APIConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConnector.swift; sourceTree = "<group>"; };
+		FA5399DE229D4D870034B04A /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		FA5399E4229D58B40034B04A /* APIConnector+TruckerAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIConnector+TruckerAPIProtocol.swift"; sourceTree = "<group>"; };
+		FA5399E6229D5BA30034B04A /* APIDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDecodable.swift; sourceTree = "<group>"; };
+		FA5399E8229D5C710034B04A /* TruckerAPIObjects+APIDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TruckerAPIObjects+APIDecodable.swift"; sourceTree = "<group>"; };
+		FA5399EB229D5E270034B04A /* TruckAPIObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckAPIObjects.swift; sourceTree = "<group>"; };
+		FA5399ED229D64DE0034B04A /* TruckAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckAPIProtocol.swift; sourceTree = "<group>"; };
+		FA5399EF229D65BB0034B04A /* TruckAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckAPIManager.swift; sourceTree = "<group>"; };
+		FA5399F1229DAF180034B04A /* DataRequest+APIDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+APIDecodable.swift"; sourceTree = "<group>"; };
+		FA5399F3229DD1A70034B04A /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
+		FA5399F6229EC4700034B04A /* Extensions+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIViewController.swift"; sourceTree = "<group>"; };
+		FA5399F9229EDF190034B04A /* TruckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckTableViewCell.swift; sourceTree = "<group>"; };
+		FA5399FA229EDF190034B04A /* TruckTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TruckTableViewCell.xib; sourceTree = "<group>"; };
+		FA5399FE229EE27D0034B04A /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		FC3EC2D003884DBF50346184 /* Pods-TrucksAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrucksAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrucksAppTests/Pods-TrucksAppTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA539989229C5F200034B04A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F3B6EA370829D944F22DCA /* Pods_TrucksApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA53999D229C5F210034B04A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03FC1C3237856023BA986958 /* Pods_TrucksAppTests.framework in Frameworks */,
+				961ADEFADF04B92B50C9AF5B /* Pods_TrucksApp_TrucksAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5399A8229C5F210034B04A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C5C25BBFB31D401218B69E8 /* Pods_TrucksAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A2B8FCB2348F1DC8957C99B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A941C66EF6777264B8D295C /* Pods_TrucksApp.framework */,
+				94CA947F28A7EDB3183F2301 /* Pods_TrucksAppTests.framework */,
+				F99BCAB37F18E32ADD623F2C /* Pods_TrucksAppUITests.framework */,
+				47B4BE98F785D7ABEA3B0096 /* Pods_TrucksApp_TrucksAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D1FBF7C343B84AFC3565063 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF579F29930A232A99EDFFD8 /* Pods-TrucksApp.debug.xcconfig */,
+				F8ED3D9033E6890F3792A1E4 /* Pods-TrucksApp.release.xcconfig */,
+				C8B9430BB3083192609D28B3 /* Pods-TrucksAppTests.debug.xcconfig */,
+				FC3EC2D003884DBF50346184 /* Pods-TrucksAppTests.release.xcconfig */,
+				D1F1D9A7DEF04EDCE4BC7832 /* Pods-TrucksAppUITests.debug.xcconfig */,
+				AE74DDA85A1E8C200D433C6E /* Pods-TrucksAppUITests.release.xcconfig */,
+				3B3899F56632C3D53F918311 /* Pods-TrucksApp-TrucksAppTests.debug.xcconfig */,
+				0D1234E4EE7475E11AC3BDFC /* Pods-TrucksApp-TrucksAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA539983229C5F200034B04A = {
+			isa = PBXGroup;
+			children = (
+				FA53998E229C5F200034B04A /* TrucksApp */,
+				FA5399A3229C5F210034B04A /* TrucksAppTests */,
+				FA5399AE229C5F210034B04A /* TrucksAppUITests */,
+				FA53998D229C5F200034B04A /* Products */,
+				8D1FBF7C343B84AFC3565063 /* Pods */,
+				6A2B8FCB2348F1DC8957C99B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA53998D229C5F200034B04A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA53998C229C5F200034B04A /* TrucksApp.app */,
+				FA5399A0229C5F210034B04A /* TrucksAppTests.xctest */,
+				FA5399AB229C5F210034B04A /* TrucksAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA53998E229C5F200034B04A /* TrucksApp */ = {
+			isa = PBXGroup;
+			children = (
+				FA5399BD229C799B0034B04A /* Classes */,
+				FA53998F229C5F200034B04A /* AppDelegate.swift */,
+				FA539996229C5F210034B04A /* Assets.xcassets */,
+				FA539998229C5F210034B04A /* LaunchScreen.storyboard */,
+				FA53999B229C5F210034B04A /* Info.plist */,
+				FA5399F3229DD1A70034B04A /* DependencyInjection.swift */,
+			);
+			path = TrucksApp;
+			sourceTree = "<group>";
+		};
+		FA5399A3229C5F210034B04A /* TrucksAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA5399A4229C5F210034B04A /* TrucksAppTests.swift */,
+				FA5399A6229C5F210034B04A /* Info.plist */,
+			);
+			path = TrucksAppTests;
+			sourceTree = "<group>";
+		};
+		FA5399AE229C5F210034B04A /* TrucksAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA5399AF229C5F210034B04A /* TrucksAppUITests.swift */,
+				FA5399B1229C5F210034B04A /* Info.plist */,
+			);
+			path = TrucksAppUITests;
+			sourceTree = "<group>";
+		};
+		FA5399BD229C799B0034B04A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FA5399D7229C88CE0034B04A /* API */,
+				FA5399F5229EC4430034B04A /* Extensions */,
+				FA5399FD229EE2200034B04A /* Protocols */,
+				FA5399BE229C7A2C0034B04A /* Routers */,
+				FA5399C1229C7B480034B04A /* Screens */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FA5399BE229C7A2C0034B04A /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				FA5399BF229C7A510034B04A /* Router.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		FA5399C1229C7B480034B04A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FA5399F8229EDEE90034B04A /* Cell */,
+				FA5399C7229C7CD10034B04A /* TruckAdd */,
+				FA5399C2229C7BBE0034B04A /* TrucksList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FA5399C2229C7BBE0034B04A /* TrucksList */ = {
+			isa = PBXGroup;
+			children = (
+				FA5399CC229C7DD50034B04A /* TrucksListViewController.swift */,
+				FA5399CD229C7DD50034B04A /* TrucksListViewController.xib */,
+			);
+			path = TrucksList;
+			sourceTree = "<group>";
+		};
+		FA5399C7229C7CD10034B04A /* TruckAdd */ = {
+			isa = PBXGroup;
+			children = (
+				FA5399C8229C7CEF0034B04A /* TruckAddViewController.swift */,
+				FA5399C9229C7CEF0034B04A /* TruckAddViewController.xib */,
+			);
+			path = TruckAdd;
+			sourceTree = "<group>";
+		};
+		FA5399D7229C88CE0034B04A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FA5399E0229D58240034B04A /* APIConnector */,
+				FA5399E1229D58390034B04A /* APIDecodable */,
+				FA5399E2229D58530034B04A /* APIManager */,
+				FA5399E3229D58600034B04A /* APIProtocol */,
+				FA5399D8229C8A5F0034B04A /* Reachability.swift */,
+				FA5399DA229C8AEA0034B04A /* APIRouter.swift */,
+				FA5399DC229D4A220034B04A /* APIConnector.swift */,
+				FA5399DE229D4D870034B04A /* APIResult.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FA5399E0229D58240034B04A /* APIConnector */ = {
+			isa = PBXGroup;
+			children = (
+				FA5399E4229D58B40034B04A /* APIConnector+TruckerAPIProtocol.swift */,
+			);
+			path = APIConnector;
+			sourceTree = "<group>";
+		};
+		FA5399E1229D58390034B04A /* APIDecodable */ = {
+			isa = PBXGroup;
+			children = (
+				FA5399E6229D5BA30034B04A /* APIDecodable.swift */,
+				FA5399E8229D5C710034B04A /* TruckerAPIObjects+APIDecodable.swift */,
+				FA5399F1229DAF180034B04A /* DataRequest+APIDecodable.swift */,
+			);
+			path = APIDecodable;
+			sourceTree = "<group>";
+		};
+		FA5399E2229D58530034B04A /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				FA5399EF229D65BB0034B04A /* TruckAPIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		FA5399E3229D58600034B04A /* APIProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				FA5399EA229D5D940034B04A /* APIObjects */,
+				FA5399ED229D64DE0034B04A /* TruckAPIProtocol.swift */,
+			);
+			path = APIProtocol;
+			sourceTree = "<group>";
+		};
+		FA5399EA229D5D940034B04A /* APIObjects */ = {
+			isa = PBXGroup;
+			children = (
+				FA5399EB229D5E270034B04A /* TruckAPIObjects.swift */,
+			);
+			path = APIObjects;
+			sourceTree = "<group>";
+		};
+		FA5399F5229EC4430034B04A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA5399F6229EC4700034B04A /* Extensions+UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA5399F8229EDEE90034B04A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FA5399F9229EDF190034B04A /* TruckTableViewCell.swift */,
+				FA5399FA229EDF190034B04A /* TruckTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FA5399FD229EE2200034B04A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FA5399FE229EE27D0034B04A /* NibLoadable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA53998B229C5F200034B04A /* TrucksApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA5399B4229C5F210034B04A /* Build configuration list for PBXNativeTarget "TrucksApp" */;
+			buildPhases = (
+				DB234E2075F7C95F758E2C4D /* [CP] Check Pods Manifest.lock */,
+				FA539988229C5F200034B04A /* Sources */,
+				FA539989229C5F200034B04A /* Frameworks */,
+				FA53998A229C5F200034B04A /* Resources */,
+				7FFD923428BEA7E950099060 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrucksApp;
+			productName = TrucksApp;
+			productReference = FA53998C229C5F200034B04A /* TrucksApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA53999F229C5F210034B04A /* TrucksAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA5399B7229C5F210034B04A /* Build configuration list for PBXNativeTarget "TrucksAppTests" */;
+			buildPhases = (
+				ADB9909C79E7BCE86F92B534 /* [CP] Check Pods Manifest.lock */,
+				FA53999C229C5F210034B04A /* Sources */,
+				FA53999D229C5F210034B04A /* Frameworks */,
+				FA53999E229C5F210034B04A /* Resources */,
+				7C134674636AE059CFA28A2E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA5399A2229C5F210034B04A /* PBXTargetDependency */,
+			);
+			name = TrucksAppTests;
+			productName = TrucksAppTests;
+			productReference = FA5399A0229C5F210034B04A /* TrucksAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA5399AA229C5F210034B04A /* TrucksAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA5399BA229C5F210034B04A /* Build configuration list for PBXNativeTarget "TrucksAppUITests" */;
+			buildPhases = (
+				E1438AA3A1EF7C67A0FB0385 /* [CP] Check Pods Manifest.lock */,
+				FA5399A7229C5F210034B04A /* Sources */,
+				FA5399A8229C5F210034B04A /* Frameworks */,
+				FA5399A9229C5F210034B04A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA5399AD229C5F210034B04A /* PBXTargetDependency */,
+			);
+			name = TrucksAppUITests;
+			productName = TrucksAppUITests;
+			productReference = FA5399AB229C5F210034B04A /* TrucksAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA539984229C5F200034B04A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = MacBook;
+				TargetAttributes = {
+					FA53998B229C5F200034B04A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					FA53999F229C5F210034B04A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = FA53998B229C5F200034B04A;
+					};
+					FA5399AA229C5F210034B04A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = FA53998B229C5F200034B04A;
+					};
+				};
+			};
+			buildConfigurationList = FA539987229C5F200034B04A /* Build configuration list for PBXProject "TrucksApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA539983229C5F200034B04A;
+			productRefGroup = FA53998D229C5F200034B04A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA53998B229C5F200034B04A /* TrucksApp */,
+				FA53999F229C5F210034B04A /* TrucksAppTests */,
+				FA5399AA229C5F210034B04A /* TrucksAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA53998A229C5F200034B04A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5399FC229EDF190034B04A /* TruckTableViewCell.xib in Resources */,
+				FA53999A229C5F210034B04A /* LaunchScreen.storyboard in Resources */,
+				FA5399CF229C7DD50034B04A /* TrucksListViewController.xib in Resources */,
+				FA5399CB229C7CEF0034B04A /* TruckAddViewController.xib in Resources */,
+				FA539997229C5F210034B04A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA53999E229C5F210034B04A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5399A9229C5F210034B04A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C134674636AE059CFA28A2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TrucksApp-TrucksAppTests/Pods-TrucksApp-TrucksAppTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrucksApp-TrucksAppTests/Pods-TrucksApp-TrucksAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FFD923428BEA7E950099060 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TrucksApp/Pods-TrucksApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrucksApp/Pods-TrucksApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADB9909C79E7BCE86F92B534 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrucksApp-TrucksAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB234E2075F7C95F758E2C4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrucksApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1438AA3A1EF7C67A0FB0385 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrucksAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA539988229C5F200034B04A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5399DD229D4A220034B04A /* APIConnector.swift in Sources */,
+				FA5399E9229D5C710034B04A /* TruckerAPIObjects+APIDecodable.swift in Sources */,
+				FA5399F2229DAF180034B04A /* DataRequest+APIDecodable.swift in Sources */,
+				FA5399EC229D5E270034B04A /* TruckAPIObjects.swift in Sources */,
+				FA5399DF229D4D870034B04A /* APIResult.swift in Sources */,
+				FA5399E7229D5BA30034B04A /* APIDecodable.swift in Sources */,
+				FA5399D9229C8A5F0034B04A /* Reachability.swift in Sources */,
+				FA5399FB229EDF190034B04A /* TruckTableViewCell.swift in Sources */,
+				FA5399EE229D64DE0034B04A /* TruckAPIProtocol.swift in Sources */,
+				FA5399FF229EE27D0034B04A /* NibLoadable.swift in Sources */,
+				FA5399F0229D65BB0034B04A /* TruckAPIManager.swift in Sources */,
+				FA5399CA229C7CEF0034B04A /* TruckAddViewController.swift in Sources */,
+				FA5399C0229C7A510034B04A /* Router.swift in Sources */,
+				FA539990229C5F200034B04A /* AppDelegate.swift in Sources */,
+				FA5399DB229C8AEA0034B04A /* APIRouter.swift in Sources */,
+				FA5399F4229DD1A70034B04A /* DependencyInjection.swift in Sources */,
+				FA5399CE229C7DD50034B04A /* TrucksListViewController.swift in Sources */,
+				FA5399E5229D58B40034B04A /* APIConnector+TruckerAPIProtocol.swift in Sources */,
+				FA5399F7229EC4700034B04A /* Extensions+UIViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA53999C229C5F210034B04A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5399A5229C5F210034B04A /* TrucksAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5399A7229C5F210034B04A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5399B0229C5F210034B04A /* TrucksAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA5399A2229C5F210034B04A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA53998B229C5F200034B04A /* TrucksApp */;
+			targetProxy = FA5399A1229C5F210034B04A /* PBXContainerItemProxy */;
+		};
+		FA5399AD229C5F210034B04A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA53998B229C5F200034B04A /* TrucksApp */;
+			targetProxy = FA5399AC229C5F210034B04A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA539998229C5F210034B04A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA539999229C5F210034B04A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA5399B2229C5F210034B04A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA5399B3229C5F210034B04A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA5399B5229C5F210034B04A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF579F29930A232A99EDFFD8 /* Pods-TrucksApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SU3Z5233FJ;
+				INFOPLIST_FILE = TrucksApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzherikhova.TrucksApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA5399B6229C5F210034B04A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8ED3D9033E6890F3792A1E4 /* Pods-TrucksApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SU3Z5233FJ;
+				INFOPLIST_FILE = TrucksApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzherikhova.TrucksApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA5399B8229C5F210034B04A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B3899F56632C3D53F918311 /* Pods-TrucksApp-TrucksAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SU3Z5233FJ;
+				INFOPLIST_FILE = TrucksAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzherikhova.TrucksAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrucksApp.app/TrucksApp";
+			};
+			name = Debug;
+		};
+		FA5399B9229C5F210034B04A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D1234E4EE7475E11AC3BDFC /* Pods-TrucksApp-TrucksAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SU3Z5233FJ;
+				INFOPLIST_FILE = TrucksAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzherikhova.TrucksAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrucksApp.app/TrucksApp";
+			};
+			name = Release;
+		};
+		FA5399BB229C5F210034B04A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1F1D9A7DEF04EDCE4BC7832 /* Pods-TrucksAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SU3Z5233FJ;
+				INFOPLIST_FILE = TrucksAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzherikhova.TrucksAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrucksApp;
+			};
+			name = Debug;
+		};
+		FA5399BC229C5F210034B04A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE74DDA85A1E8C200D433C6E /* Pods-TrucksAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SU3Z5233FJ;
+				INFOPLIST_FILE = TrucksAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzherikhova.TrucksAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrucksApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA539987229C5F200034B04A /* Build configuration list for PBXProject "TrucksApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5399B2229C5F210034B04A /* Debug */,
+				FA5399B3229C5F210034B04A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA5399B4229C5F210034B04A /* Build configuration list for PBXNativeTarget "TrucksApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5399B5229C5F210034B04A /* Debug */,
+				FA5399B6229C5F210034B04A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA5399B7229C5F210034B04A /* Build configuration list for PBXNativeTarget "TrucksAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5399B8229C5F210034B04A /* Debug */,
+				FA5399B9229C5F210034B04A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA5399BA229C5F210034B04A /* Build configuration list for PBXNativeTarget "TrucksAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5399BB229C5F210034B04A /* Debug */,
+				FA5399BC229C5F210034B04A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA539984229C5F200034B04A /* Project object */;
+}

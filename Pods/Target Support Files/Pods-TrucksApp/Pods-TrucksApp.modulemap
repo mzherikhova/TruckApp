@@ -1,0 +1,6 @@
+framework module Pods_TrucksApp {
+  umbrella header "Pods-TrucksApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
