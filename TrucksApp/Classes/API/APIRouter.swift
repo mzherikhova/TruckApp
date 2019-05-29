@@ -80,12 +80,14 @@ extension APIRouter: URLRequestConvertible {
     var method: HTTPMethod {
         switch self {
             case
-            .truckCreate,
-            .truckDelete:
+            .truckCreate:
                 return .post
-        case
-        .truckUpdate:
-            return .patch
+            case
+            .truckUpdate:
+                return .patch
+            case
+            .truckDelete:
+                return .delete
             case
             .truckers:
                 return .get
@@ -98,9 +100,9 @@ extension APIRouter: URLRequestConvertible {
             // MARK: Markers
             case .truckCreate:
                 return "truck/add"
-            case .truckDelete:
-                return "truck/delete"
-        case let .truckUpdate(id,_, _, _):
+            case let .truckDelete(id):
+                return "truck/\(id)"
+            case let .truckUpdate(id,_, _, _):
                 return "truck/\(id)"
             case .truckers:
                 return "trucks"

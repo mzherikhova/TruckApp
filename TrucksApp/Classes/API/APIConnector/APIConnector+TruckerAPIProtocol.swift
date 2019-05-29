@@ -10,6 +10,7 @@ import Alamofire
 import Foundation
 
 extension APIConnector: TruckAPIProtocol {
+    
     func createTruck(_ nameTruck: String,
                      _ price: String,
                      _ comment: String,
@@ -32,12 +33,16 @@ extension APIConnector: TruckAPIProtocol {
         debugPrint(request)
     }
     
-    func deleteTruck(_ id: Int, _ closure: ((APIResult<EmptyResponse, APIError>) -> Void)?) {
+    func deleteTruck(_ id: Int, _ closure: (() -> Void)?) {
         if !APIConnector.isConnectionGood() {
             let error = APIError.slowInternetConnection
-            closure?(.failure(error))
+            closure?()
             return
         }
+        let router = APIRouter.truckDelete(id: id)
+        let request = manager.request(router)
+        closure?()
+        debugPrint(request)
         
         
     }

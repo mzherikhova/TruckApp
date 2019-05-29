@@ -77,6 +77,14 @@ extension TrucksListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 350
     }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+            TruckAPIManager.shared.deleteTruck(trucks[indexPath.row].id, {
+                [weak weakSelf = self]  in
+                _ = weakSelf?.getTrucks()  // Do any addit
+            })
+        }
+    }
 }
 
 extension TrucksListViewController: UITableViewDataSource {

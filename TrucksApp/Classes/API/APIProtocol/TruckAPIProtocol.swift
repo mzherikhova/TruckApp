@@ -12,7 +12,7 @@ protocol TruckAPIProtocol {
                       _ price: String,
                       _ comment: String,
                       _ closure: ((APIResult<TruckResponse, APIError>) -> Void)?)
-    func deleteTruck(_ id: Int, _ closure: ((APIResult<EmptyResponse, APIError>) -> Void)?)
+    func deleteTruck(_ id: Int, _ closure: (() -> Void)?)
     func updateTruck(_ id: Int,
                        _ nameTruck: String,
                        _ price: String,

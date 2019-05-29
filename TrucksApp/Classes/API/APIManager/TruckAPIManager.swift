@@ -17,6 +17,7 @@ class TruckAPIManager {
 }
 
 extension TruckAPIManager: TruckAPIProtocol {
+
     func createTruck(_ nameTruck: String,
                      _ price: String,
                      _ comment: String,
@@ -24,7 +25,7 @@ extension TruckAPIManager: TruckAPIProtocol {
         apiProtocol.createTruck(nameTruck, price, comment, closure)
     }
     
-    func deleteTruck(_ id: Int, _ closure: ((APIResult<EmptyResponse, APIError>) -> Void)?) {
+    func deleteTruck(_ id: Int, _ closure: (() -> Void)?) {
         apiProtocol.deleteTruck(id, closure)
     }
     
