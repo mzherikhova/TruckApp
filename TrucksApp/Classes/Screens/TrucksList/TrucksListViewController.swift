@@ -12,6 +12,8 @@ import MBProgressHUD
 class TrucksListViewController: UIViewController {
     
     @IBOutlet weak var truckTableView: UITableView!
+    var refreshControl: UIRefreshControl!
+    
     private var trucks: [TruckResponseModel] = [] {
         didSet {
             truckTableView.reloadData()
@@ -23,6 +25,7 @@ class TrucksListViewController: UIViewController {
         registerCells()
         delegating()
         addRightButton()
+        setRefresh()
         getTrucks()
         
     }
@@ -30,6 +33,19 @@ class TrucksListViewController: UIViewController {
         super.viewWillAppear(animated)
         getTrucks()
     }
+    private func setRefresh() {
+        refreshControl = UIRefreshControl()
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action:#selector(TrucksListViewController.refreshAction(sender:)), for: UIControl.Event.valueChanged)
+        self.truckTableView.addSubview(refreshControl)
+        
+    }
+    
+    @objc func refreshAction(sender:AnyObject) {
+        getTrucks()
+        refreshControl.endRefreshing()
+    }
+    
     private func getTrucks() {
         let loadingNotification = MBProgressHUD.showAdded(to: view, animated: true)
         loadingNotification?.mode = MBProgressHUDMode.indeterminate

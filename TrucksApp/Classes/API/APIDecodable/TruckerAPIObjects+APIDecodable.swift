@@ -34,7 +34,8 @@ extension TrucksResponse: APIDecodable {
         guard let array = json.array else {
             return .failure(APIDecodableConstants.cantDecodableMessage + " \(self)")
         }
-        let truckers = array.flatMap({ TruckResponseModel.decode($0).data })
+        var truckers = array.flatMap({ TruckResponseModel.decode($0).data })
+        truckers = truckers.filter{$0.isValid}
         let resp = TrucksResponse(truckers: truckers)
         return .success(resp)
     }

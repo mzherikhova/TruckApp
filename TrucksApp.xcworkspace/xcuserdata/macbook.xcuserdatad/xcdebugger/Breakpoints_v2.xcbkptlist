@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrucksApp/Classes/API/APIDecodable/TruckerAPIObjects+APIDecodable.swift"
-            timestampString = "580845776.009385"
+            timestampString = "580898121.580686"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrucksApp/Classes/Screens/TrucksList/TrucksListViewController.swift"
-            timestampString = "580847073.5535589"
+            timestampString = "580898121.581118"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrucksApp/Classes/API/APIDecodable/TruckerAPIObjects+APIDecodable.swift"
-            timestampString = "580845776.009838"
+            timestampString = "580898121.581192"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "decode(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrucksApp/Classes/Screens/TrucksList/TrucksListViewController.swift"
-            timestampString = "580847073.554093"
+            timestampString = "580898121.5814739"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "tableView(_:commit:forRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrucksApp/Classes/Screens/TrucksList/TrucksListViewController.swift"
-            timestampString = "580847073.5544831"
+            timestampString = "580898121.581535"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "tableView(_:commit:forRowAt:)"
             landmarkType = "7">
             <Locations>

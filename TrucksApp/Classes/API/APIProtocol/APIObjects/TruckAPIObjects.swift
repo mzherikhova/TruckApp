@@ -16,6 +16,14 @@ struct TruckResponseModel: TruckParameters {
     var nameTruck: String
     var price: String
     var comment: String
+    
+    var isValid: Bool {
+        guard !(price ).isEmpty, !(nameTruck ).isEmpty, id != nil, Int(price) ?? 0 > 0 else {
+            return false
+        }
+        
+        return true
+    }
 }
 
 struct TrucksResponse {

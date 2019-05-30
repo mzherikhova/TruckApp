@@ -51,8 +51,8 @@ class TruckAddViewController: UIViewController {
             showAlert(with: "Ошибка", and: "Заполните все поля")
             return
         }
-        guard (Int(price) != nil) else {
-            showAlert(with: "Ошибка", and: "Цена должна быть Int")
+        guard (Int(price) != nil && Int(price) ?? 0 > 0) else {
+            showAlert(with: "Ошибка", and: "Цена должна быть Int и больше 0")
             return
         }
         if let truck = currentTruck {
